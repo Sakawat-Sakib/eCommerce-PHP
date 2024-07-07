@@ -1,0 +1,652 @@
+/*BASIC STYLING*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	font-size: 10px;
+	font-family: arial;
+	font-weight: 200;
+}
+
+
+/*REUSEABLE STYLING*/
+
+/*------------*/
+/*---button---*/
+.btn{
+	padding: 1rem 2rem;
+	border: 1px solid transparent;
+	background-color: #f9b706 ;
+	color:#000;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 400;
+	font-size: 2rem;
+
+	
+}
+
+.btn:hover{
+	background-color: #fa9502 ;
+	cursor: pointer;
+}
+
+.status_btn{
+	
+	padding: 1rem;
+	color: #fff;
+	font-size: 1.3rem;
+	border-radius: .8rem;
+}
+.active_btn{
+	background-color: #6ad982;
+}
+.deactive_btn{
+	background-color: #f7a44b;
+}
+.edit:hover,
+.delete:hover{
+	color:#c63619;
+}
+
+/*---button end---*/
+/*----------------*/
+
+
+
+/*----------------*/
+/*-- a li p h --*/
+
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: black;
+	font-size: 2rem;
+}
+p{
+	font-size: 1.6rem;
+}
+p,a,.main_sec_banner h1{
+	opacity: 0.8;
+}
+h1{
+	font-size: 3rem;
+	font-weight: 400;
+}
+h2{
+	font-size: 2rem;
+	font-family: 'Jura', sans-serif;
+}
+i{
+	font-size: 3rem;
+}
+/*----------------*/
+/*-- a li p h  end--*/
+
+
+input{
+	padding: 1rem;
+	font-size: 2rem;
+	border:1px solid transparent;
+}
+
+
+.container{
+	width: 95%;
+	margin: 0 auto;
+	padding: 2rem 0;
+	text-align: center;
+}
+
+
+
+
+/*--TABLE--*/
+table{
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 1.7rem;
+}
+table a{
+	font-size: 1.7rem;
+	margin: 0 1rem;
+}
+table img{
+	width: 8rem;
+	height: 8rem;
+	object-fit: cover;
+}
+table thead tr{
+	background-image: linear-gradient( 135deg, #F5CBFF 10%, #C346C2 100%);
+}
+table thead tr th {
+	text-align: left;
+	padding: 1rem;
+}
+
+table tbody tr{
+	border-bottom: 1px solid  #cbcacb;
+}
+table tbody tr td{
+	padding:2rem 1rem;
+	text-align: left;
+}
+table tbody tr td:last-child{
+	text-align: right;
+}
+
+
+
+.order_btn{
+	font-size: 1.5rem;
+	padding: .5rem 1rem;
+	background-color:  #ecbef7 ;
+	border-radius: .6rem;
+	color: #fff;
+}
+.order_btn:hover{
+	background-color:  #db4afb  ;
+}
+/*--TABLE END--*/
+
+
+.ap_form{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 2rem 0;
+	margin-bottom: 0;
+}
+.ap_form input{
+	width: 100%;
+	border:1px solid transparent;
+	margin: 1rem 0;
+}
+.ap_form select{
+	width: 100%;
+	margin: 1rem 0;
+	padding: 1rem;
+	font-size: 2rem;
+	border:none;
+}
+.ap_form input[type=submit]{
+	background-color: #F761A1;
+	color: #fff;
+	cursor: pointer;
+	font-family: 'Jura', sans-serif;
+	font-weight: bold;
+
+}
+.ap_form input[type=submit]:hover{
+	background-color:  #ee14a2 ;
+}
+
+
+footer{
+	padding: 2rem 0;
+	text-align: center;
+	background-color: #535353;
+	box-shadow: 1px 1px 15px rgba(0,0,0,0.2);
+}
+footer p{
+	color: #fff;
+}
+/*================*/
+
+
+
+
+/*LOGIN PAGE*/
+.login_container{
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0,0,0,0.5);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.login_header{
+	width: 50rem;
+	height: 6rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: .5rem;
+	background-image: linear-gradient( 135deg, #70F570 10%, #49C628 100%);
+	color:rgba(0,0,0,0.5); 
+	font-family: 'Jura', sans-serif;
+}
+.login_form{
+	width: 50rem;
+	height: 30rem;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: linear-gradient( 135deg, #70F570 10%, #49C628 100%); 
+}
+.login_form input{
+	width: 80%;
+	margin: 1rem auto;
+}
+
+.error_msg{
+	color: #df1b0b;
+	font-size: 2rem;
+	margin-top: 1rem;
+}
+/*ADMIN HEADER*/
+.admin_header{
+	height: 6rem;
+	padding: 2rem 6rem; 
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #9b52b3;
+	box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	
+}
+.logo_bar_flex{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.fa-chevron-circle-down{
+	
+	color: rgba(255,255,255,0.6);
+	margin: 0 4rem;
+	cursor: pointer;
+}
+.fa-chevron-circle-down:hover{
+	color: #fff;
+}
+.ap_tag{
+	font-family: 'Jura', sans-serif;
+	color: #fff;
+}
+.ap_menu{
+	position: fixed;
+	top: 6rem;
+	left: 0;
+	width: 30rem;
+	height: calc(100vh - 6rem);
+	display: flex;
+	justify-content: flex-start;
+	text-align: center;
+	flex-direction: column;
+	background-color: rgba( 241, 241, 241 ,0.9);
+	box-shadow: 2px 4px 15px rgba(0,0,0,0.2);
+	transform: translateY(-150%);
+	transition: .5s;
+}
+.ap_menu.drop{
+	transform: translateY(0);
+}
+.menu_head{
+	padding: 2rem ;
+	font-family: 'Fira Sans', sans-serif;
+}
+
+.ap_menu_list{
+	margin-top: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.ap_menu_list li{
+	width: 90%;
+	padding: 1rem 1rem;
+	margin:1rem 0; 
+	background-color:#dadcd9;
+	transition: .5s;
+	font-weight: normal;
+}
+.ap_menu_list li:hover{
+	box-shadow: 0px 1px 5px rgba(0,0,0,0.3);
+	background-color: #c6afcd ; 
+	cursor: pointer;
+}
+
+/*MAIN SECTION*/
+.main_sec{
+	margin-top: 7rem;
+	padding: 2rem;
+	min-height: calc(100vh - 7rem);
+}
+.main_sec_banner{
+	padding: 2rem;
+	text-align: center;
+	background-color: #f1f4f0;
+	box-shadow: 1px 1px 15px rgba(0,0,0,0.2);
+	position: relative;
+}
+.fa-plus-circle{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 4rem;
+	
+	color: #989797 ; 
+}
+.fa-plus-circle:hover{
+	color:  #777776 ;
+}
+.main_sec_container{
+	margin-top: 3rem;
+	background-color: #f1f4f0;
+	box-shadow: 1px 1px 15px rgba(0,0,0,0.2); 
+	width: 100%;
+}
+.error_msg{
+	color: red;
+	font-size: 1.8rem;
+}
+.main_sec_manager{
+	width: 50%;
+	background-color: #e8c1fb ;
+	margin: 0 auto;
+	margin-top: 3rem;
+}
+.main_sec_manager .ap_form input[type=submit]{
+	background-color: #c04cfa;
+}
+.main_sec_manager .ap_form input[type=submit]:hover{
+	background-color:  #b016fc ;
+}
+
+
+/* MANAGE ORDER  PAGE */
+.order_info{
+	text-align: center;
+	margin-bottom: 4rem;
+}
+.order_info h1{
+	margin-bottom: 2rem;
+}
+.order_info p{
+	margin-bottom: 1rem;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: lighter;
+	font-size: 1.8rem;
+
+}
+.order_product_info table thead tr{
+	background-image: linear-gradient( 135deg, #FEB692 10%, #EA5455 100%);
+}
+.order_product_info table th{
+	text-align: left;
+	padding: 1rem 1rem;
+	font-size: 2rem;
+	color: #fff;
+	font-family: 'Jura', sans-serif;
+
+}
+.order_product_info table tbody tr{
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.order_product_info table tbody tr:last-child{
+	border-bottom: none;
+}
+
+
+.order_product_info table th:last-child{
+	text-align: right;
+}
+
+.order_product_info table tr td{
+	padding:1rem 2rem;
+	font-size: 1.8rem;
+	
+}
+.order_product_info table tr td:last-child{
+	text-align: right;
+}
+.order_form{
+	margin-top: 4rem;
+}
+.order_form select{
+	padding: 1rem 2rem;
+	font-size: 1.8rem;
+	margin-right: 1rem;
+}
+.order_form input{
+	padding: .8rem 2rem;
+	background-color: #ef709a  ;
+	cursor: pointer;
+	margin-left: 1rem;
+	color: #fff;
+}
+.order_form input:hover{
+	background-color: #fa578d ;
+}
+
+/*MEDIA QUERY*/
+@media screen and (max-width: 920px){
+
+	table thead{
+		display: none;
+	}
+
+	table,
+	table tbody,
+	table tr,
+	table td{
+		display: block;
+		width: 100%;
+	}
+	table tbody tr{
+		margin-bottom: 2rem;
+		border:2px solid  #dab2ef;
+	}
+	
+	table tbody tr td{
+		text-align: right;
+		padding-right: 1rem;
+		border-bottom: 1px solid  #d7d5d8;
+		position: relative;
+		font-weight: bold;
+	}
+	table tbody tr td:last-child{
+		border-bottom: none;
+	}
+	table tbody tr td:before{
+		content: attr(data-label);
+		position: absolute;
+		left: 0;
+		padding-left: 1rem;
+		font-weight: bold;
+	}
+}
+
+@media screen and (max-width: 764px){
+
+	.login_header,
+	.login_form{
+		width: 40rem;
+	}
+
+	h1{
+		font-size: 2.5rem;
+		font-weight: 400;
+	}
+
+	h2{
+		font-size: 2rem;
+		font-family: 'Jura', sans-serif;
+	}
+	a{
+		font-size: 1.8rem;
+	}
+
+	i{
+		font-size: 2.7rem;
+	}
+	.btn{
+		font-size: 1.8rem;
+	}
+	.admin_header{
+		padding: 2rem 3rem;
+	}
+	input,.ap_form select{
+		font-size: 1.8rem;
+	}
+	.main_sec_banner{
+		padding: 1.5rem;
+	}
+	.main_sec_manager{
+		width: 70%;
+	}
+}
+
+
+
+@media screen and (max-width: 600px){
+	.order_form select{
+		padding: .7rem 1.7rem;
+	}
+	
+	.login_form{
+		height: 20rem;
+	}
+	h1{
+		font-size: 2.2rem;
+		font-weight: 400;
+	}
+
+	h2{
+		font-size: 1.7rem;
+		font-family: 'Jura', sans-serif;
+	}
+	a{
+		font-size: 1.7rem;
+	}
+	p{
+		font-size: 1.4rem;
+	}
+	i{
+		font-size: 2.4rem;
+	}
+
+	.btn{
+		font-size: 1.6rem;
+	}
+	.admin_header{
+		padding: 2rem 2rem;
+	}
+	input,.ap_form select{
+		font-size: 1.6rem;
+	}
+	table,
+	table a{
+		font-size: 1.5rem;
+	}
+	.main_sec_banner{
+		padding: 1.3rem;
+	}
+	.main_sec_manager{
+		width: 85%;
+	}
+}
+
+
+
+@media screen and (max-width: 450px){
+
+	.ap_menu_list li{
+		font-weight: bold;
+	}
+
+
+	.login_header,
+	.login_form{
+		width: 30rem;
+	}
+	h1{
+		font-size: 2.0rem;
+		font-weight: 400;
+	}
+
+	h2{
+		font-size: 1.5rem;
+		font-family: 'Jura', sans-serif;
+	}
+	a{
+		font-size: 1.5rem;
+	}
+	p{
+		font-size: 1.3rem;
+	}
+	i{
+		font-size: 2.0rem;
+	}
+	.btn{
+		font-size: 1.4rem;
+		padding: .5rem .8rem;
+	}
+	.admin_header{
+		padding: 2rem 2rem;
+	}
+	input,.ap_form select{
+		font-size: 1.5rem;
+	}
+	.ap_menu{
+		width: 100%;
+	}
+	table,
+	table a{
+		font-size: 1.4rem;
+	}
+	.main_sec_banner{
+		padding: 1rem;
+	}
+	.login_container{
+		justify-content: flex-start;
+		padding-top: 20rem;
+	}
+	.main_sec_manager{
+		width: 100%;
+	}
+}
+
+
+@media screen and (max-width: 370px){
+	.login_header{
+		height: 4rem;
+	}
+	h1{
+		font-size: 1.5rem;
+		font-weight: 400;
+	}
+
+	h2{
+		font-size: 1.3rem;
+		font-family: 'Jura', sans-serif;
+	}
+	
+
+	.btn{
+		font-size: 1.3rem;
+	}
+	table,
+	table a{
+		font-size: 1.3rem;
+	}
+	p{
+		font-size: 1.2rem;
+	}
+	.main_sec_banner{
+		padding: .8rem;
+	}
+}

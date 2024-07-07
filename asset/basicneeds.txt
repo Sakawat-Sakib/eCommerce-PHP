@@ -1,0 +1,13 @@
+    font-family: 'Abel', sans-serif;
+
+    font-family: 'Jura', sans-serif;
+
+    font-family: 'Reggae One', cursive;
+
+    font-family: 'Fira Sans', sans-serif;
+
+	green- #89d90d
+	ash- #535353 rgba(83,83,83,0)
+
+
+	background-image: linear-gradient( 135deg, #FEB692 10%, #EA5455 100%);
